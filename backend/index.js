@@ -1,5 +1,7 @@
 import express from "express"
 import cors from "cors"
+import * as d3 from 'd3';
+
 
 const app = express()
 
@@ -8,9 +10,9 @@ app.use(cors({
 }))
 
 app.get("/", (req, res) => {
+    
     res.send({
-        x: [1, 2, 3],
-        y: [4, 5, 6]
+        data
     }).status(200)
 })
 

@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://cdn.plot.ly/plotly-2.25.2.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
         <script type="module" src="graph.mjs"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
     </head>
     <body>
+        <div id="header">
+            AQI Levels Around the World
+        </div>
         <div id="graph"></div>
+        <div class="info">
+            This graph visualizes the AQI levels at various big cities around the world.
+            According to the scale on the right, you can determine what parts of the world have the most pollution.
+        </div>
+        <div class="info">
+            The goal of this visualization is to provide valuable insights into the air quality of different regions, allowing researchers and policymakers to make informed decisions on how to address the issue of air pollution.
+            The inspiration for creating this project came from the growing concern over the impact of air pollution on our health and the environment. By making this data easily accessible and understandable, I hope to contribute to the ongoing efforts to improve air quality and create a cleaner, healthier world for future generations.
+        </div>
+        <div class="info" id="bottom">
+            Submission for DSSD UW-Madison 2023 - Urmi Shukla.
+        </div>
     </body>
 </html>
